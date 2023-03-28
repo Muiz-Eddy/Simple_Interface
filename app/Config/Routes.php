@@ -5,13 +5,19 @@ namespace Config;
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
+// Load the system's routing file first, so that the app and ENVIRONMENT
+// can override as needed.
+if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
+    require SYSTEMPATH . 'Config/Routes.php';
+}
+
 /*
  * --------------------------------------------------------------------
  * Router Setup
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Users');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -19,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -29,7 +35,27 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Users::index' );
+$routes->get('/login', 'Users::index',['filter' => 'home']);
+$routes->post('/login', 'Users::index');
+$routes->get('/register', 'Reg::index', ['filter' => 'home']);
+$routes->post( '/register', 'Reg::index');
+
+
+$routes->get('/logout', 'Users::logout');
+$routes->post('/logout', 'Users::logout');
+
+$routes->get('/profile2', 'Profile2::index', ['filter' => 'logout'] );
+$routes->post('/profile2', 'Profile2::index');
+$routes->get('/profile', 'Profile::index');
+$routes->post('/profile', 'Profile::index');
+
+$routes->get('/user_data', 'List_user::index', ['filter' => 'logout'] );
+$routes->post('/user_data', 'List_user::index');
+
+$routes->get('/chat', 'Chat::index', ['filter' => 'logout']);
+$routes->post('/chat', 'Chat::index');
+$routes->get('/message','Chat::message');
 
 /*
  * --------------------------------------------------------------------

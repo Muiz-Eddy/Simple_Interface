@@ -1,0 +1,324 @@
+/*............................................ CHAT CSS ...................................................*/
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+/*..................................................................LOGIN...............................................................*/
+
+/* Mobile Screen */
+@media screen and (max-width: 767px) {
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .login-form-container {
+    width: auto;
+    margin: auto;
+  }
+
+  .personal {
+  padding: 20px;   
+  background-color: white;  
+  border: 1px solid #f1f1f1; 
+  }
+
+  .labels {
+    color: rgba(33, 33, 33, 0.3);
+  }
+
+  .personal2 {
+    margin-top: 10px;
+    padding: 20px;   
+    background-color: white;  
+    border: 1px solid #f1f1f1; 
+    }
+    
+ .content {
+  padding: 25px;   
+  background-color: lightblue;  
+  border: 3px solid #f1f1f1;   
+ }
+
+ input[type=email], input[type=password], input[type=text], input[type=date], input[type=tel], .textarea {   
+  width: 100%;   
+  margin: 8px 0;  
+  padding: 12px 20px;   
+  display: inline-block;   
+  border: 2px solid green;   
+  box-sizing: border-box;   
+}  
+
+  button {   
+  background-color: #2d2ddc;   
+  width: 100%;  
+   color: plum;   
+   padding: 15px;   
+   margin: 10px 0px;   
+   border: none;   
+   cursor: pointer;   
+    }   
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+  li {
+  float: left;
+}
+
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  li a:hover:not(.active) {
+    background-color: #111;
+}
+
+}   
+
+/* Tablet */
+@media screen and (min-width: 768px ) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .login-form-container {
+    width: auto;
+    margin: auto;
+  }
+
+  .personal {
+  padding: 20px;   
+  background-color: white;  
+  border: 1px solid #f1f1f1; 
+  }
+
+  .labels {
+    color: rgba(33, 33, 33, 0.3);
+  }
+
+  .personal2 {
+    margin-top: 10px;
+    padding: 20px;   
+    background-color: white;  
+    border: 1px solid #f1f1f1; 
+    }
+    
+ .content {
+  padding: 20px;   
+  background-color: lightblue;  
+  border: 3px solid #f1f1f1;   
+ }
+
+ input[type=email], input[type=password], input[type=text], input[type=date], input[type=tel], .textarea {   
+  width: 100%;   
+  margin: 8px 0;  
+  padding: 12px 20px;   
+  display: inline-block;   
+  border: 2px solid green;   
+  box-sizing: border-box;   
+}  
+
+  button {   
+  background-color: #2d2ddc;   
+  width: 100%;  
+   color: plum;   
+   padding: 15px;   
+   margin: 10px 0px;   
+   border: none;   
+   cursor: pointer;   
+    }   
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+  li {
+  float: left;
+}
+
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  li a:hover:not(.active) {
+    background-color: #111;
+}
+
+  
+}   
+
+/*for desktop*/
+@media screen and (min-width: 1024px ) {
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .login-form-container {
+    width: auto;
+    margin: auto;
+  }
+
+  .personal {
+  padding: 20px;   
+  background-color: white;  
+  border: 1px solid #f1f1f1; 
+  }
+
+  .labels {
+    color: rgba(33, 33, 33, 0.3);
+  }
+
+  .personal2 {
+    margin-top: 5px;
+    padding: 13px;   
+    background-color: white;  
+    border: 1px solid #f1f1f1; 
+    }
+    
+ .content {
+  padding: 13px;   
+  background-color: lightblue;  
+  border: 3px solid #f1f1f1;   
+ }
+
+ input[type=email], input[type=password], input[type=text], input[type=date], input[type=tel], .textarea {   
+  width: 100%;   
+  margin: 8px 0;  
+  padding: 12px 20px;   
+  display: inline-block;   
+  border: 2px solid green;   
+  box-sizing: border-box;   
+}  
+
+  button {   
+  background-color: #2d2ddc;   
+  width: 100%;  
+   color: plum;   
+   padding: 15px;   
+   margin: 10px 0px;   
+   border: none;   
+   cursor: pointer;   
+    }   
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+  li {
+  float: left;
+}
+
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  li a:hover:not(.active) {
+    background-color: #111;
+}
+
+  
+}   
+
+

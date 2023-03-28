@@ -1,0 +1,564 @@
+CRITICAL - 2023-03-23 02:30:59 --> Undefined property: stdClass::$Email
+in APPPATH/Views/Profile/profile2.php on line 14.
+ 1 APPPATH/Views/Profile/profile2.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Email', 'APPPATH/Views/Profile/profile2.php', 14)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Profile/profile2.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('Profile/profile2', [], true)
+ 5 APPPATH/Controllers/Profile2.php(21): view('Profile/profile2', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 06:19:17 --> Undefined property: App\Controllers\List_user::$template
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$template', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 06:21:24 --> Undefined property: App\Controllers\List_user::$dmodel
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$dmodel', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 06:21:35 --> Undefined variable $data
+in APPPATH/Controllers/List_user.php on line 16.
+ 1 APPPATH/Controllers/List_user.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Controllers/List_user.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:34:19 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:35:23 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:36:20 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:36:21 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:42:21 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:43:37 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:44:18 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:45:59 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:47:45 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:47:46 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:47:47 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:50:18 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 15.
+ 1 APPPATH/Controllers/List_user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:51:17 --> Undefined property: App\Controllers\List_user::$load
+in APPPATH/Controllers/List_user.php on line 16.
+ 1 APPPATH/Controllers/List_user.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\List_user::$load', 'APPPATH/Controllers/List_user.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:56:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::from()
+in APPPATH/Models/Users.php on line 7.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:56:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::from()
+in APPPATH/Models/Users.php on line 7.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:56:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH/Models/Users.php on line 12.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 07:58:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH/Models/Users.php on line 12.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:05:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH/Models/Users.php on line 12.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:07:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH/Models/Users.php on line 12.
+ 1 APPPATH/Controllers/List_user.php(16): App\Models\Users->get()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:07:42 --> Undefined variable $row
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 APPPATH/Views/user/user_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/user/user_data.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/user_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 5 APPPATH/Controllers/List_user.php(17): view('user/user_data')
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:08:56 --> Undefined variable $row
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 APPPATH/Views/user/user_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/user/user_data.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/user_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 5 APPPATH/Controllers/List_user.php(17): view('user/user_data')
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:08:57 --> Undefined variable $row
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 APPPATH/Views/user/user_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/user/user_data.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/user_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 5 APPPATH/Controllers/List_user.php(17): view('user/user_data')
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:08:58 --> Undefined variable $row
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 APPPATH/Views/user/user_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/user/user_data.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/user_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 5 APPPATH/Controllers/List_user.php(17): view('user/user_data')
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:09:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 4 APPPATH/Controllers/List_user.php(17): view('user/user_data', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 08:14:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH/Views/user/user_data.php on line 11.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 4 APPPATH/Controllers/List_user.php(17): view('user/user_data', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 10:12:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH/Views/user/user_data.php on line 22.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('user/user_data', [], true)
+ 4 APPPATH/Controllers/List_user.php(17): view('user/user_data', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\List_user->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\List_user))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 22:25:32 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-23 22:25:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `messages`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Chat->message()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 22:25:33 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Chat->message()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-23 22:25:33 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `messages`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Chat.php(42): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Chat->message()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 22:25:58 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-23 22:25:58 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@gmail.com', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 22:28:17 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-23 22:28:17 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('abdulmuiz.eddy@gmail.com', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'abdulmuiz.eddy@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 22:30:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#14 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-23 22:30:06 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', [...], [...])
+ 8 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH/Controllers/Users.php(23): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Users->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,9 @@
+CRITICAL - 2022-08-29 02:29:59 --> Invalid file: /chat.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/chat.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/chat', [], true)
+ 3 APPPATH\Controllers\Chat.php(37): view('/chat')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Chat->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

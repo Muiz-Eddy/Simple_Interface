@@ -1,0 +1,477 @@
+ERROR - 2023-03-24 00:59:02 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-24 00:59:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', [...], [...])
+ 8 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH/Controllers/Users.php(23): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Users->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 00:59:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-24 00:59:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', [...], [...])
+ 8 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH/Controllers/Users.php(23): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Users->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 00:59:11 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/app/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Users->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-24 00:59:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Validation/Login_Rules.php(8): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/Validation/Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', [...], null)
+ 7 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', [...], [...])
+ 8 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH/Controllers/Users.php(23): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Users->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 00:59:24 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 00:59:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 00:59:58 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/muiz_edd...', 171)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('http://34.143.2...', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 00:59:58 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 01:00:05 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 01:00:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 01:00:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'muiz_db'@'localhost' (using password: YES) in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 01:00:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 01:00:57 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 01:00:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 01:05:28 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'muiz_db', 'nT83XDPLkKMfCxC...', 'muiz_db', 3306, '', 0)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu...', 'email', Array, NULL)
+#5 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu...', Array, Array)
+#6 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /Users/muiz_eddy/Documents/Mini_Project/login/app/Controllers/Reg.php(22): CodeIgniter\Controller->validate(Array)
+#8 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Reg->index()
+#9 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+#10 /Users/muiz_eddy/Documents/Mini_Project/login/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/muiz_eddy/Documents/Mini_Project/login/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-24 01:05:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(308): CodeIgniter\Validation\Rules->is_unique('18B9002@ubd.edu.bn', 'email', [...], null)
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '18B9002@ubd.edu.bn', [...], [...])
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Reg.php(22): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Reg->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reg))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

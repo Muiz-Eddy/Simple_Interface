@@ -1,0 +1,55 @@
+ERROR - 2022-08-30 06:31:40 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'login', 3306, '', 0)
+#1 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Validation\Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#7 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Validation\Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#8 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#9 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#10 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#11 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Users->index()
+#12 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#13 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Validation\Login_Rules.php(8): CodeIgniter\BaseModel->first()
+#6 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Validation\Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', Array, NULL)
+#7 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', Array, Array)
+#8 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#10 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Users->index()
+#11 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#12 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\mesre\Documents\Internet Application\Mini_Project\login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-08-30 06:31:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Validation\Login_Rules.php(8): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\Validation\Validation.php(308): App\Validation\Login_Rules->validateUser('Mesmes25', 'email,password', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Mesmes25', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Users.php(23): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Users->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

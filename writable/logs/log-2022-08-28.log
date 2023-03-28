@@ -1,0 +1,195 @@
+CRITICAL - 2022-08-28 00:02:40 --> Object of class App\Models\profilemodel could not be converted to string
+in APPPATH\Controllers\Profile2.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:10:43 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(13): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:40 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:40 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:13:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:15:40 --> Call to undefined method App\Models\profilemodel::getLoggedInUserData
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Profile2.php(19): CodeIgniter\Model->__call('getLoggedInUserData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:17:14 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Profile2.php on line 21
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Profile2.php(21): view('Profile2/profile2', false)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:17:41 --> Invalid file: Profile2/profile2.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Profile2/profile2.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Profile2/profile2', [], true)
+ 3 APPPATH\Controllers\Profile2.php(21): view('Profile2/profile2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:17:45 --> Invalid file: Profile2/profile2.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Profile2/profile2.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Profile2/profile2', [], true)
+ 3 APPPATH\Controllers\Profile2.php(21): view('Profile2/profile2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:18:20 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Profile2.php on line 22
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Profile2.php(22): view('Profile2/profile2', false)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:18:49 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Profile2.php on line 22
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Profile2.php(22): view('Profile/profile2', false)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:18:50 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Profile2.php on line 22
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Profile2.php(22): view('Profile/profile2', false)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:18:50 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\Users\mesre\Documents\Internet Application\Mini_Project\login\app\Controllers\Profile2.php on line 22
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Profile2.php(22): view('Profile/profile2', false)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:23:11 --> Attempt to read property "firstname" on bool
+in APPPATH\Views\Profile\profile2.php on line 8.
+ 1 APPPATH\Views\Profile\profile2.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "firstname" on bool', 'APPPATH\\Views\\Profile\\profile2.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Profile\\profile2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Profile/profile2', [], true)
+ 5 APPPATH\Controllers\Profile2.php(21): view('Profile/profile2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:25:24 --> Undefined variable $firstname
+in APPPATH\Views\Profile\profile2.php on line 8.
+ 1 APPPATH\Views\Profile\profile2.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $firstname', 'APPPATH\\Views\\Profile\\profile2.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Profile\\profile2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Profile/profile2', [], true)
+ 5 APPPATH\Controllers\Profile2.php(21): view('Profile/profile2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:26:13 --> syntax error, unexpected string content "Profile/profile2);"
+in APPPATH\Controllers\Profile2.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Profile2.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profile2')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profile2')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Profile2', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:30:36 --> Undefined variable $table
+in APPPATH\Models\profilemodel.php on line 9.
+ 1 APPPATH\Models\profilemodel.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH\\Models\\profilemodel.php', 9)
+ 2 APPPATH\Controllers\Profile2.php(19): App\Models\profilemodel->getLoggedInUserdata(true)
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:30:42 --> Call to a member function where() on null
+in APPPATH\Models\profilemodel.php on line 10.
+ 1 APPPATH\Controllers\Profile2.php(19): App\Models\profilemodel->getLoggedInUserdata(true)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-28 00:35:01 --> Undefined property: stdClass::$username
+in APPPATH\Views\Profile\profile2.php on line 8.
+ 1 APPPATH\Views\Profile\profile2.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$username', 'APPPATH\\Views\\Profile\\profile2.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Profile\\profile2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Profile/profile2', [], true)
+ 5 APPPATH\Controllers\Profile2.php(21): view('Profile/profile2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Profile2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile2))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
